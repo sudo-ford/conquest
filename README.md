@@ -1,10 +1,10 @@
 # conquest
 Интернет-магазин часов
 
-sass
-gulp
-js
-panini
-адаптивный
-резиновый
-figma
+sass  
+gulp  
+js  
+panini  
+адаптивный  
+резиновый  
+figma  
