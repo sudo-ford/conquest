@@ -1,0 +1,52 @@
+.looked {
+    padding-top: 80px;
+
+    position: relative;
+
+    @media ($tablet) {
+        padding-top: 40px;
+    }
+}
+
+.looked__title {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+}
+
+.looked__catalog {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.looked__arrow {
+    @include button-reset;  
+    width: 12px;
+    height: 23px;
+
+    background: url("../img/arrow.svg") no-repeat;
+    opacity: 0.5;
+
+    position: absolute;
+
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.looked__arrow--prev {
+    top: 50%;
+    left: -30px;
+}
+
+.looked__arrow--next {
+    top: 50%;
+    right: -30px;
+
+    transform: rotate(180deg);
+}

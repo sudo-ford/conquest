@@ -1,0 +1,41 @@
+.range {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+    width:100%;
+    height:1px;
+    margin-bottom: 15px;
+
+    background-color: #D4D4D4;
+
+    outline : none;
+}
+
+.range2 {
+    position: absolute;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    border: 1px solid #000;
+
+    background-color: #fff;
+    cursor:pointer;
+    transition:.1s;
+
+    position: relative;
+    z-index: 2;
+}
+
+.range__inner {
+    display: flex;
+    justify-content: space-around;
+}

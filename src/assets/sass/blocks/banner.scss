@@ -1,0 +1,84 @@
+.banner {
+    width: 100%;
+
+    background: url("../img/banner-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+
+    @media ($mobile) {
+        padding: 30px 30px;
+    }
+}
+
+.banner__slider {
+    width: 50%;
+
+    @media ($tablet) {
+        width: 100%;
+    }
+}
+
+.banner__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+
+    @media ($tablet) {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+
+        // text-align: center;
+    }
+}
+
+.banner__title {
+    margin-bottom: 40px;
+    font-size: 32px;
+
+    @media ($tablet) {
+        margin-bottom: 25px;
+    }
+}
+
+.banner__text {
+    margin-bottom: 45px;
+    font-size: 16px;
+
+    @media ($tablet) {
+        margin-bottom: 25px;
+    }
+}
+
+.banner__link {
+    display: inline-block;
+    width: 205px;
+    padding: 25px;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: #D4B098;
+
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        background-color: $text-default;
+    }
+
+    @media ($tablet) {
+        margin: 0 auto;
+    }
+}

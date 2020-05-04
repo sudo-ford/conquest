@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;  
+
+    @media ($tablet) {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    &--show {
+        display: flex;
+    }
+}
+
+.nav__link {
+    margin: 0 30px;
+    transition: .2s;
+
+    @media ($tablet) {
+        margin: 10px 0;
+        font-size: 20px;    
+    }
+
+    &:hover,
+    &:focus {
+        color: $text-hover;
+    }
+
+    &--active {
+        color: $text-hover;
+    }
+}

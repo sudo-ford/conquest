@@ -1,0 +1,458 @@
+---
+layout: default
+title: catalog
+---
+
+<main class="catalog-main">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="#index.html" class="breadcrumbs__link">Главная</a>
+            <a href="#catalog.html" class="breadcrumbs__link">Каталог</a>
+            <a href="" class="breadcrumbs__link breadcrumbs__link--active">Мужские часы</a>
+        </div>
+
+        <section class="catalog">
+            <h2 class="catalog__title">Мужские часы</h2>
+
+            <form action="" class="form" method="GET">
+                <fieldset class="form__block">
+                    <input class="form__hidden" type="checkbox" id="form1">
+                    <label class="form__title" for="form1">Стоимость</label>
+                    <div class="form__filter">
+                        <input class="range" id="range1" type="range" min="0" max="150000" step="1000" value="12000">
+                        <input class="range range2" id="range2" type="range" min="0" max="150000" step="1000" value="100000">
+                        <div class="range__inner">
+                            <output class="range1-output" for="range1">1000</output>
+                            <output class="range2-output" for="range2">100000</output>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="form__block">
+                    <input class="form__hidden" type="checkbox" id="form2">
+                    <label class="form__title" for="form2">Бренд</label>
+                    <div class="form__filter">
+                        <input type="checkbox" class="form__checkbox" id="brand1">
+                        <label class="form__label" for="brand1">
+                            Techne  
+                        </label>
+
+                        <input type="checkbox" class="form__checkbox" id="brand2">
+                        <label class="form__label" for="brand2">
+                            Rado
+                        </label>
+
+                        <input type="checkbox" class="form__checkbox" id="brand3">
+                        <label class="form__label" for="brand3">
+                            Bvlgari
+                        </label>
+
+                        <input type="checkbox" class="form__checkbox" id="brand4">
+                        <label class="form__label" for="brand4">
+                            Tissot
+                        </label>
+
+                        <input type="checkbox" class="form__checkbox" id="brand5">
+                        <label class="form__label" for="brand5">
+                            Omega
+                        </label>
+
+                        <input type="checkbox" class="form__checkbox" id="brand6">
+                        <label class="form__label" for="brand6">
+                            Montblanc
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__block">
+                    <input class="form__hidden" type="checkbox" id="form3">
+                    <label class="form__title" for="form3">Механизм</label>
+                    <div class="form__filter"></div>
+                </fieldset>
+
+                <fieldset class="form__block">
+                    <input class="form__hidden" type="checkbox" id="form4">
+                    <label class="form__title" for="form4">Материал</label>
+                    <div class="form__filter"></div>
+                </fieldset>
+
+                <fieldset class="form__block">
+                    <input class="form__hidden" type="checkbox" id="form5">
+                    <label class="form__title" for="form5">Цвет</label>
+                    <div class="form__filter"></div>
+                </fieldset>
+                <button class="form__reset" class="reset">сбросить фильтр</button>
+            </form>
+
+            <div class="catalog__inner">
+                <div class="catalog__sort">
+                        Сортировать по:
+                    <div class="catalog__select-inner">
+                        <select class="catalog__select">
+                            <option value="популярности">популярности</option>
+                            <option value="цене">цене</option>
+                        </select>
+                    </div>
+                </div>
+
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>                    
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item catalog__discount">
+                        <span class="catalog__discount--large">-20%</span><br>
+                        НА ВТОРУЮ ПОЗИЦИЮ В ЧЕКЕ
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="catalog__item">
+                        <h3 class="catalog__name">TECHNE</h3>
+                        <p class="catalog__price">12 700 &#8381</p>
+                        <span class="catalog__icons">
+                            <button class="catalog__btn like-js">
+                                <svg class="catalog__icon like">
+                                    <use xlink:href="#favourite"></use>
+                                </svg>
+                            </button>
+                            <button class="catalog__btn">
+                                <svg class="catalog__icon basket">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <figure class="catalog__img">
+                            <a href="card.html">
+                                <img src="assets/img/catalog1.png" alt="">
+                            </a>
+                        </figure>
+                    </li>  
+                </ul>
+
+                <div class="catalog__paginator">
+                    <a href="">&lt;</a>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="" class="catalog__paginator--active">3</a>
+                    <span>&hellip;</span>
+                    <a href="">12</a>
+                    <a class="next" href="">&gt;</a>
+                  </div>
+            </div><!-- /catalog__inner -->
+        </section>
+    </div><!-- /container -->
+
+    <section class="distribution">
+        <div class="container distribution__inner">
+            <div class="distribution__text">
+                <p class="distribution__info">подписка на рассылку</p>
+                <h2 class="distribution__title">Получить скидку 10% на первую покупку</h2>
+            </div>
+            <form action="" method="GET" class="distribution__form">
+                <div>
+                    <label for="#email" class="distribution__label">E-mail</label>
+                    <br>
+                    <input type="email" id="email" class="distribution__input">
+                </div>
+                <button type="submit" class="distribution__submit">подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="watchbands">
+
+            <button class="watchbands__arrow watchbands__arrow--prev" type="button">
+            </button>
+            <button class="watchbands__arrow watchbands__arrow--next" type="button">
+            </button>
+
+            <h2 class="watchbands__title">Ремешки</h2>
+            <a class="watchbands__link" href="">Смотреть все</a>
+            <ul class="watchbands__catalog">
+                <li class="catalog__item">
+                    <h3 class="catalog__name">TECHNE</h3>
+                    <p class="catalog__price">12 700 &#8381</p>
+                    <span class="catalog__icons">
+                        <button class="catalog__btn like-js">
+                            <svg class="catalog__icon like">
+                                <use xlink:href="#favourite"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog__btn">
+                            <svg class="catalog__icon basket">
+                                <use xlink:href="#basket"></use>
+                            </svg>
+                        </button>
+                    </span>
+                    <figure class="catalog__img">
+                        <a href="card.html">
+                            <img src="assets/img/watchband1.png" alt="">
+                        </a>
+                    </figure>
+                </li>
+
+                <li class="catalog__item">
+                    <h3 class="catalog__name">TECHNE</h3>
+                    <p class="catalog__price">12 700 &#8381</p>
+                    <span class="catalog__icons">
+                        <button class="catalog__btn like-js">
+                            <svg class="catalog__icon like">
+                                <use xlink:href="#favourite"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog__btn">
+                            <svg class="catalog__icon basket">
+                                <use xlink:href="#basket"></use>
+                            </svg>
+                        </button>
+                    </span>
+                    <figure class="catalog__img">
+                        <a href="card.html">
+                            <img src="assets/img/watchband1.png" alt="">
+                        </a>
+                    </figure>
+                </li>
+
+                <li class="catalog__item">
+                    <h3 class="catalog__name">TECHNE</h3>
+                    <p class="catalog__price">12 700 &#8381</p>
+                    <span class="catalog__icons">
+                        <button class="catalog__btn like-js">
+                            <svg class="catalog__icon like">
+                                <use xlink:href="#favourite"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog__btn">
+                            <svg class="catalog__icon basket">
+                                <use xlink:href="#basket"></use>
+                            </svg>
+                        </button>
+                    </span>
+                    <figure class="catalog__img">
+                        <a href="card.html">
+                            <img src="assets/img/watchband1.png" alt="">
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</main>

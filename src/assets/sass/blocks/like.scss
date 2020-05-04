@@ -1,0 +1,13 @@
+.like {
+    fill: #000;
+
+    transition: .2s;
+
+    &:hover {
+        fill: $like;
+    }
+}
+
+.like--active {
+    fill: $like;
+}

@@ -1,0 +1,89 @@
+.distribution {
+    background: url("../img/distribution-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.distribution__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 65px 0 90px 0;
+}
+
+.distribution__text {
+    width: 50%;
+    padding: 0 40px;
+
+    @media ($tablet) {
+        width: 100%;
+    }
+}
+
+.distribution__info {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.distribution__title {
+    margin-bottom: 40px;
+
+    font-size: 45px;
+    font-weight: 700;
+    line-height: auto;
+}
+
+.distribution__form {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 40px; 
+
+    @media ($tablet) {
+        width: 100%;
+    }
+}
+
+.distribution__form div {
+    width: 320px;
+    margin-right: 40px;
+}
+
+.distribution__input {
+    width: 100%;
+    margin-right: 30px;
+    padding: 5px 10px;
+
+    border: none;
+    border-bottom: 2px solid $text-default;
+
+    background-color: inherit;
+    outline: none;
+    transition: .2s;
+
+    &:focus {
+        border-bottom: 2px solid $text-hover;
+    }
+}
+
+.distribution__submit {
+    @include button-reset;
+
+    width: 185px;
+    padding: 25px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #31302C;
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        background-color: $text-hover;
+    }
+}

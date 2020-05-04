@@ -1,0 +1,46 @@
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+
+    @media ($tablet) {
+        justify-content: center;
+    }
+
+    &--footer {
+        padding-top: 0;
+        margin-bottom: 28px;
+
+        @media ($tablet) {
+            justify-content: start;
+        }
+
+        @media ($mobile) {
+            justify-content: center;
+        }
+    }
+}
+
+.logo__link {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: .2s;
+
+    @media ($tablet) {
+        font-size: 24px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $text-hover;
+    }
+
+    &--white {
+        color: #fff;
+    }
+}
+
+.logo__icon--white {
+    fill: #fff;
+}

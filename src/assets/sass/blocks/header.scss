@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+    @media ($tablet) {
+        flex-direction: column;
+    }
+}
+
+.header__btn {
+    @include button-reset;
+    display: none;
+    width: 18px;
+    height: 16px;
+
+    position: absolute;
+    top: 35px;
+    right: 20px;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 1px;
+        background-color: $text-default;
+        box-shadow: 0 7px 0 0 $text-default, 0 14px 0 0 $text-default;
+        transition: background-color .2s,
+                box-shadow .2s;
+    }
+
+    &:hover::before {
+        background-color: $text-hover;
+        box-shadow: 0 7px 0 0 $text-hover, 0 14px 0 0 $text-hover;
+    }
+
+    @media ($tablet) {
+        display: block;
+    }
+}
+
+.header__btn--hide {
+    @include button-reset;
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 35px;
+    right: 20px;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 18px;
+        height: 1px;
+
+        position: absolute;
+        top: 9px;
+        left: 0;
+
+        background-color: $text-default;
+        transition: background-color .2s;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        background-color: $text-hover;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

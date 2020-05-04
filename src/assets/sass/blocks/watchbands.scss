@@ -1,0 +1,71 @@
+.watchbands {
+    padding-top: 80px;
+
+    position: relative;
+
+    @media ($tablet) {
+        padding-top: 40px;
+    }
+}
+
+.watchbands__title {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+}
+
+.watchbands__catalog {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.watchbands__arrow {
+    @include button-reset;  
+    width: 12px;
+    height: 23px;
+
+    background: url("../img/arrow.svg") no-repeat;
+    opacity: 0.5;
+
+    position: absolute;
+
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.watchbands__arrow--prev {
+    top: 50%;
+    left: -30px;
+}
+
+.watchbands__arrow--next {
+    top: 50%;
+    right: -30px;
+
+    transform: rotate(180deg);
+}
+
+.watchbands__link {
+    position: absolute;
+    right: 0;
+    top: 110px;
+
+    text-decoration: underline;
+
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        color: $text-hover;
+    }
+
+    @media ($tablet) {
+        top: 80px;
+    }
+}

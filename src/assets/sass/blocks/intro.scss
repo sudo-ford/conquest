@@ -1,0 +1,131 @@
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("../img/intro-bg.png") center no-repeat;
+}
+
+.intro__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 90px;
+    flex-shrink: 0;
+
+    @media ($tablet) {
+        width: 100%;
+        padding: 20px 0;
+
+        text-align: center;
+    }
+}
+
+.intro__img {
+    width: 60%;
+    position: relative;
+    text-align: center;
+
+    @media ($tablet) {
+        width: 100%;
+    }
+
+    @media ($mobile) {
+        display: none;
+    }
+}
+
+.intro__title {
+    margin-bottom: 20px;
+
+    position: relative;
+
+    font-size: 45px;
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+
+        position: absolute;
+        top: 25px;
+        left: -70px;
+
+        background-color: $text-default;
+    }
+}
+
+.intro__subtitle {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.intro__text {
+    margin-bottom: 65px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.intro__link {
+    display: inline-block;
+    width: 205px;
+    padding: 25px 0;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+    background-color: #444240;
+
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        background-color: $text-hover;
+    }
+
+    @media ($tablet) {
+        margin: 0 auto;
+    }
+}
+
+.intro__price {
+    position: absolute;
+    top: 130px;
+    left: 0;
+
+    font-size: 16px;
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+
+        position: absolute;
+        top: 7px;
+        right: -60px;
+
+        background-color: $text-default;
+    }
+}
+
+.intro__spec {
+    position: absolute;
+    bottom: 145px;
+    right: 0;
+
+    font-size: 16px;
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+
+        position: absolute;
+        top: 7px;
+        left: -60px;
+
+        background-color: $text-default;
+    }
+}

@@ -1,0 +1,37 @@
+.breadcrumbs {
+    margin: 40px 0;
+
+    @media ($mobile) {
+        margin: 30px 0;
+    }
+}
+
+.breadcrumbs__link {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+    position: relative;
+
+    font-weight: 500;
+    opacity: .5;
+
+    transition: .2s;
+
+    &:not(:last-child)::after {
+        content: ">";
+
+        position: absolute;
+        top: 0;
+        right: -20px;
+    }
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.breadcrumbs__link--active {
+    opacity: 1;
+}

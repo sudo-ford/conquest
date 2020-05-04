@@ -1,0 +1,128 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__gallery {
+    flex: 1 1 50%;
+
+    @media ($tablet) {
+        flex-basis: 100%;
+    }
+}
+
+.card__inner {
+    flex: 1 1 50%;
+    padding: 50px 60px;
+
+    position: relative;
+
+    @media ($mobile) {
+        padding: 15px;
+    }
+}
+
+.card__title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__price {
+    margin-bottom: 50px;
+
+    font-size: 24px;
+}
+
+.card__btn {
+    @include button-reset;
+
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}
+
+.card__icon {
+    width: 21px;
+    height: 17px;   
+}
+
+.card__label {
+    display: inline-block;
+    margin: 0 40px 20px 0;
+    padding-bottom: 5px;
+
+    font-size: 16px;
+    font-weight: 500; 
+    
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        color: $text-hover;
+    }
+}
+
+.card__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.card__input[id="desc"]:checked ~ .card__desc {
+    display: block;
+} 
+
+.card__input[id="desc"]:checked ~ .card__label[for="desc"] {
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+} 
+
+.card__input[id="spec"]:checked ~ .card__spec {
+    display: block;
+}
+
+.card__input[id="spec"]:checked ~ .card__label[for="spec"] {
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.card__text {
+    margin-bottom: 30px;
+
+    font-weight: 300;
+}
+
+.card__desc {
+   display: none; 
+}
+
+.card__spec {
+    display: none;
+}
+
+.card__link {
+    display: block;
+    width: 185px;
+    padding: 25px;
+    margin-top: 50px;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    background-color: #31302C;
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        background-color: $text-hover;
+    }
+
+    @media ($mobile) {
+        margin: 30px auto 0;
+    }
+}

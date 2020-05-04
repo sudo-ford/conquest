@@ -1,0 +1,171 @@
+.form {
+    flex: 0 0 230px;
+    margin-bottom: 30px;
+
+    @media ($tablet) {
+        flex-basis: 100%;
+        padding: 0 50px;
+    }
+
+    @media ($mobile) {
+        padding: 0;
+    }
+}
+
+.form__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    position: relative;
+
+    border: none;
+}
+
+.form__title {
+    position: relative;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 1px;
+
+        position: absolute;
+        top: 4px;
+        right: 0;
+
+        background-color: $text-default;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 1px;
+        
+        position: absolute;
+        top: 4px;
+        right: 0;
+
+        background-color: $text-default;
+
+        transform: rotate(90deg);
+        transition: transform .5s;
+    }
+}
+
+.form__hidden {
+    width: 0;
+    height: 0;
+
+    appearance: none;
+    position: absolute;
+}
+
+.form__hidden[id="form1"]:checked ~ .form__filter {
+    display: flex;
+}
+
+.form__hidden[id="form2"]:checked ~ .form__filter {
+    display: flex;
+}
+
+.form__hidden[id="form3"]:checked ~ .form__filter {
+    display: flex;
+}
+
+.form__hidden[id="form4"]:checked ~ .form__filter {
+    display: flex;
+}
+
+.form__hidden[id="form5"]:checked ~ .form__filter {
+    display: flex;
+}
+
+.form__hidden[id="form1"]:checked ~ .form__title::after {
+    transform: rotate(180deg);
+}
+
+.form__hidden[id="form2"]:checked ~ .form__title::after {
+    transform: rotate(180deg);
+}
+
+.form__hidden[id="form3"]:checked ~ .form__title::after {
+    transform: rotate(180deg);
+}
+
+.form__hidden[id="form4"]:checked ~ .form__title::after {
+    transform: rotate(180deg);
+}
+
+.form__hidden[id="form5"]:checked ~ .form__title::after {
+    transform: rotate(180deg);
+}
+
+.form__filter {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding-top: 25px;
+
+    transition: display .5s;
+}
+
+.form__label {
+    margin-bottom: 20px;
+    padding-left: 25px;
+
+    position: relative;
+
+    font-size: 12px;
+
+    &::before {
+        content: "";
+        width: 13px;
+        height: 13px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        border: 1px solid $text-default;
+        transition: .2s;
+    }
+}
+
+.form__checkbox {
+    display: none;
+}
+
+.form__checkbox[id="brand1"]:checked ~ .form__label[for="brand1"]::before,
+.form__checkbox[id="brand2"]:checked ~ .form__label[for="brand2"]::before,
+.form__checkbox[id="brand3"]:checked ~ .form__label[for="brand3"]::before,
+.form__checkbox[id="brand4"]:checked ~ .form__label[for="brand4"]::before,
+.form__checkbox[id="brand5"]:checked ~ .form__label[for="brand5"]::before,
+.form__checkbox[id="brand6"]:checked ~ .form__label[for="brand6"]::before {
+    background: $text-default url("../img/checkbox.png") center center no-repeat;
+}
+
+.form__reset {
+    @include button-reset;
+    width: 100%;
+    padding: 25px 0;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    border: 2px solid $text-hover;
+    transition: .2s;
+
+    &:hover {
+        background-color: $text-hover;
+    }
+}

@@ -1,0 +1,13 @@
+.basket {
+    fill: #000;
+
+    transition: .2s;
+
+    &:hover {
+        fill: $like;
+    }
+}
+
+.basket--active {
+    fill: $like;
+}
